@@ -12,7 +12,7 @@ int main(int argc, const char *argv[])
 {
   @autoreleasepool
   {
-    NSURL *url = [NSURL URLWithString:@"http://www.gear-wiki.com/showfile/2251/gearwikilogo.png/269"];
+    NSURL *url = [NSURL URLWithString:@"http://www.spitcrazy.com/corsair.jpg"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSError *error = nil;
     
@@ -25,7 +25,7 @@ int main(int argc, const char *argv[])
     }
     
     NSLog(@"The file is %lu bytes", (unsigned long)[data length]);
-    BOOL written = [data writeToFile:@"/tmp/google.png" options:0 error:&error];
+    BOOL written = [data writeToFile:@"/Users/cwnidog/corsair.jpg" options:0 error:&error];
     
     if (!written)
     {
