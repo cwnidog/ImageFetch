@@ -25,7 +25,7 @@ int main(int argc, const char *argv[])
     }
     
     NSLog(@"The file is %lu bytes", (unsigned long)[data length]);
-    BOOL written = [data writeToFile:@"/Users/cwnidog/corsair.jpg" options:0 error:&error];
+    BOOL written = [data writeToFile:@"/Users/cwnidog/corsair.jpg" options:NSDataWritingAtomic error:&error];
     
     if (!written)
     {
