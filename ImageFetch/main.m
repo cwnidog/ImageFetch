@@ -35,6 +35,9 @@ int main(int argc, const char *argv[])
     
     NSLog(@"Success");
     
+    NSData *readData = [NSData dataWithContentsOfFile:@"/Users/cwnidog/corsair.jpg"];
+    NSLog(@"The file read from the disk has %lu bytes/n", (unsigned long) readData.length);
+    
   } // @autoreleasepool
     return 0;
 } // main()
